@@ -20,7 +20,7 @@ func main() {
 
 	for i:=0;i<1000 && continueSearch;i++ {
 
-		file, err := os.Open("data")
+		file, err := os.Open("data.csv")
 		check(err)
 
 		scanner := bufio.NewScanner(file)
